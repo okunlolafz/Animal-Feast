@@ -1,6 +1,6 @@
-# Doggy Dodge Game
+# Animal Feast
 
-Welcome to the Doggy Dodge game repository! This Unity game challenges players to dodge balls while launching their adorable pet dogs into the sky. The game is designed with simplicity and fun in mind. Let's dive into the details.
+Welcome to the Animal Feast game repository! In this Unity game, players control a hungry animal trying to catch and consume various types of food. The game offers an exciting challenge of quick reflexes and precision. Let's dive into the details.
 
 ## Table of Contents
 
@@ -13,53 +13,57 @@ Welcome to the Doggy Dodge game repository! This Unity game challenges players t
 
 ## Overview
 
-Doggy Dodge is a casual Unity game where players control a character to dodge incoming balls and launch cute dogs into the air. The game features a straightforward gameplay loop and is suitable for players of all ages.
+Animal Feast is a casual Unity game where players control an animal in an immersive 3D environment. The goal is to catch different types of food items while avoiding collisions with other animals. The game brings together simple controls and engaging mechanics for an enjoyable experience.
 
 ## Game Mechanics
 
 The game includes the following key mechanics:
 
-- **Spawn Management:** Balls are spawned at random intervals from the top of the play area.
-- **Dog Launch:** Players can launch their pet dog into the air using the spacebar. Dogs can only be launched when positioned at the spawn origin.
-- **Collision Detection:** Collisions with balls trigger their destruction, providing a satisfying experience for the player.
-- **Destruction Limits:** Both balls and dogs are destroyed if they go beyond specific positional limits.
+- **Animal Spawning:** Different food items spawn randomly at intervals within the 3D environment.
+- **Player Movement:** Players control the animal's movement using arrow keys or A/D keys.
+- **Food Launch:** Pressing the spacebar launches food projectiles to catch items.
+- **Collision Detection:** Collisions with food items trigger their destruction and scoring.
+- **Bound Limits:** The game monitors the animal's position, destroying it if it goes out of bounds.
 
 ## How to Play
 
-1. **Dodge Balls:**
-   - Use your arrow keys or A/D keys to move your character left or right to dodge incoming balls.
+1. **Navigate the Environment:**
+   - Use the arrow keys or A/D keys to move the animal left or right in the 3D environment.
 
-2. **Launch Dogs:**
-   - Press the spacebar to launch your adorable pet dog into the air. Be strategic as the dog can only be launched from the spawn origin.
+2. **Launch Food Projectiles:**
+   - Press the spacebar to launch food projectiles and catch items.
 
-3. **Scoring:**
-   - The game is endless, and the challenge is to achieve the highest score possible by dodging balls and launching dogs.
+3. **Score Points:**
+   - Catch different types of food items to score points.
+
+4. **Avoid Collisions:**
+   - Colliding with other animals or missing food items may have consequences.
 
 ## Scripts
 
-### 1. `SpawnManagerX.cs`
+### 1. `SpawnManager.cs`
 
-This script manages the spawning of random balls at the top of the play area.
+This script manages the spawning of different food items randomly within the 3D play area.
 
-### 2. `PlayerControllerX.cs`
+### 2. `CollisionDetection.cs`
 
-Controls the player's ability to launch their dog into the air using the spacebar.
+Handles the detection of collisions, destroying both the animal and the collided object.
 
-### 3. `MoveForwardX.cs`
+### 3. `FoodMovement.cs`
 
-Moves game objects forward at a specified speed.
+Moves the food items forward in the 3D space at a specified speed.
 
-### 4. `DetectCollisionsX.cs`
+### 4. `PlayerMovement.cs`
 
-Handles the detection of collisions, destroying the game object upon contact.
+Manages the player's ability to control the animal's movement, launch food projectiles, and monitors position bounds.
 
-### 5. `DestroyOutOfBoundsX.cs`
+### 5. `RemoveOutOfBounds.cs`
 
-Destroys game objects if they go beyond specified positional limits.
+Destroys game objects (both animals and food items) if they go beyond specified positional limits in the 3D space.
 
 ## Contributing
 
-If you're interested in contributing to the Doggy Dodge game, follow these steps:
+If you're interested in contributing to the Animal Feast game, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -72,4 +76,4 @@ This project is licensed under the [MIT License](LICENSE), allowing for both per
 
 Feel free to reach out with any questions, feedback, or suggestions.
 
-Have a great time playing and developing Doggy Dodge!
+Enjoy playing and developing Animal Feast!
